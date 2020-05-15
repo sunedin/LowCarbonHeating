@@ -20,8 +20,11 @@
     - [Average carbon intensity](#average-carbon-intensity)
     - [Marginal carbon intensity](#marginal-carbon-intensity)
     - [Covid-19 Case (on going)](#covid-19-case-on-going)
-    
+
+![alt text](results/sketch.png)
+
 # Demand management of hybrid heating
+
 
 This work present the demand management study of hybrid heating system at a single household under different cost-emission-network scenarios. A optimisation model is developed to minimise the total running cost to meet the end-use all heating demand in the single family house while subject to approximated network constraints. Cost signal considered both cost and also carbon emission of heating sources.
 
@@ -49,11 +52,11 @@ Hybrid heating equipment (air sourced heat pump (ASHP) and gas boiler) has been 
 Size (input side): gas boiler = 7kWh; ASHP = 5kWh;  
 Efficiency: gas boiler = 0.9; nominal COP of ASHP = 3.57
 
-## Weather data 
-**Ambient temperature**: 
+## Weather data
+**Ambient temperature**:
 heating demand is calibrated with the historical local temperature records. (see Figure.1 )
 
-For advanced case, air sourced heat pump's actual COP could be also determined by outdoor ambient temperature. 
+For advanced case, air sourced heat pump's actual COP could be also determined by outdoor ambient temperature.
 
 ## Fuel cost
 
@@ -71,7 +74,7 @@ based on historical price of UK wholesale market (see Figure.1 )
 ## Carbon intensity
 ### Carbon intensity by fuel and geration techs:
 
-| Fuel/techs| g/kWh| 
+| Fuel/techs| g/kWh|
 |--------------------------|------|
 | Gas current           | 185 |
 | Gas future green      | 60  |
@@ -95,6 +98,7 @@ When there is coal generation during the settlement period, the marginal carbon 
 1kW maximum import limit is applied when consider the constraints on the LV network.
 
 ![alt text \label{fig1}](results/hybridheat_sysinfo.png "Time series plot")
+
 Figure 1. Time series plot of input data
 
 
@@ -112,22 +116,22 @@ Network: exclude/include
 
 ###  Cost per delivered heat
 
-While elelctriicty is expensive than gas per kW, the efficicty of ASPH is also higher. their comparison should be conduct using the cost per delivered heat. 
+While elelctriicty is expensive than gas per kW, the efficicty of ASPH is also higher. their comparison should be conduct using the cost per delivered heat.
 
 **The cost per delivered heat** = cost of fuel per unit * (1 - loss during distribution) / efficiency of conversion technology
 
 ### Base case
 
-| | | 
+| | |
 |--------------------------|------|
 |fuel price: |flat (Gas= 0.035 £/kwh; Electricity = 0.135 £/kwh)|
 |emission: |excluded|
 |network: |excluded|
 
 This base scenario only consider current retail price without any price signal of emission or network.
- 
+
 The cost per delivered heat from Gas Boiler is 0.0389 £/kW  
-The cost per delivered heat from ASPH is 0.0378 £/kW 
+The cost per delivered heat from ASPH is 0.0378 £/kW
 
 ********* Main results *********  
 Total ASHP electricity consumption: 83.2 kWh  
@@ -142,7 +146,7 @@ Average ASHP Coefficient of Performance (COP): 3.57
 
 ### Network constraint
 
-| | | 
+| | |
 |--------------------------|------|
 |fuel price: |flat |
 |emission: |excluded|
@@ -153,7 +157,7 @@ The distribution network could face significant challenge due to the considerabl
 In this scenario, network constraint is considered as demand cap applied to the
 individual house, and the optimisation model control the heating consistently with these constraints.
 
-Given the peak non-heating demand which reflect the network before the deployment of ASHP is around 0.7kW, the electricity demand cap is set as 1kW and fixed for the whole period. 
+Given the peak non-heating demand which reflect the network before the deployment of ASHP is around 0.7kW, the electricity demand cap is set as 1kW and fixed for the whole period.
 
 From the results shown below, it is clear during the period electricity demand cap is reached, the remaining heating demand is met by more expensive supply from gas boiler.
 
@@ -170,26 +174,26 @@ Total heat demand: 297.0 kWh
 
 ### ToU price
 
-| | | 
+| | |
 |--------------------------|------|
 |fuel price: |varing price (indicative electricity price = 2 * spot price|
 |emission: |excluded|
 |network: |excluded|
 
 The scenario considered what happens to demand patterns if electricity costs
-reflected the time-varying cost in its production and distribution. 
+reflected the time-varying cost in its production and distribution.
 
 To approximate a ToU retail pricing scheme maybe available in the future, historical spot market price during the study period were subsequently scaled up (doubel here) to match the range of current retail price, as the hybrid heating system is
 controlling based on the relative gas:electricity price.
 
 
-These signals were applied to half of the 
+These signals were applied to half of the
 homes, leaving the remainder on a flat electricity tariff and a medium gas pric                  
 .26) as a baseline comparison; the results are shown in Figure 9 through to              11.
 
 
 UK wholesale electricity price  
-Wholesale Electricity Price Chart 2016 – 2019 
+Wholesale Electricity Price Chart 2016 – 2019
 
 | Quarter/ Year | Wholesale Price | Electricity RPI |
 |---------------|-----------------|-----------------|
@@ -202,14 +206,14 @@ Wholesale Electricity Price Chart 2016 – 2019
 
 Total ASHP electricity consumption: 64.3 kWh  
 Total ASHP heat output: 229.5 kWh  
-Total Gas Boiler heat output: 67.5 kWh 
+Total Gas Boiler heat output: 67.5 kWh
 
 ![alt test](results/c/hybridheat_cost.png)
 ![alt test](results/c/hybridheating_results.png)
 
 ### Average carbon intensity
 
-| | | 
+| | |
 |--------------------------|------|
 |fuel price: |using indicative price to reflect the carbon emissions of resource fuel: electricity --> hourly UK grid Avaragecarbon intensity £;  gas --> 185 £ |
 |emission: |considered, see above|
@@ -223,19 +227,19 @@ reflected time-varying carbon emission of electricity imported from the grid. Wi
 Total ASHP electricity consumption: 83.2 kWh  
 Total ASHP heat output: 297.0 kWh   
 Total Gas Boiler heat output: 0.0 kWh  
-Total heat demand: 297.0 kWh 
+Total heat demand: 297.0 kWh
 
 ![alt test](results/d/Carbon_Emission.png)
 ![alt test](results/d/hybridheat_cost.png)
 
 The indicative cost per delivered heat from Gas Boiler is considerable higher than ASHP throughout this period, therefore heating demand is fully provide by ASHP.
- 
+
 ![alt test](results/d/hybridheating_results.png)
 
 
 ### Marginal carbon intensity
 
-| | | 
+| | |
 |--------------------------|------|
 |Fuel price: |using indicative price to reflect the carbon emissions of resource fuel: electricity --> hourly UK grid Marginal carbon intensity £;  gas --> 185 £ |
 |emission: |considered, see above|
@@ -262,9 +266,3 @@ Total heat demand: 297.0 kWh
 ### Covid-19 Case (on going)
 
 Given that UK national grid has been operated without coal for over a month during this pandamic (such scenario is highly likely in the future), it is interesting to see how the hybrid heating system may operate response to such consistently low carbon scenario.
-
- 
-
-
-
-
