@@ -21,7 +21,7 @@
     - [Marginal carbon intensity](#marginal-carbon-intensity)
     - [Covid-19 Case (on going)](#covid-19-case-on-going)
 
-![alt text](results/sketch.png)
+![alt text](results/sketch.PNG)
 
 # Demand management of hybrid heating
 
@@ -185,22 +185,6 @@ reflected the time-varying cost in its production and distribution.
 
 To approximate a ToU retail pricing scheme maybe available in the future, historical spot market price during the study period were subsequently scaled up (doubel here) to match the range of current retail price, as the hybrid heating system is
 controlling based on the relative gas:electricity price.
-
-
-These signals were applied to half of the
-homes, leaving the remainder on a flat electricity tariff and a medium gas pric                  
-.26) as a baseline comparison; the results are shown in Figure 9 through to              11.
-
-
-UK wholesale electricity price  
-Wholesale Electricity Price Chart 2016 – 2019
-
-| Quarter/ Year | Wholesale Price | Electricity RPI |
-|---------------|-----------------|-----------------|
-| Apr 2017      | £42.10          | 132.10          |
-| Jul 2017      | £43.05          | 139.20          |
-| Oct 2017      | £46.68          | 142.30          |
-| Jan 2018      | £56.18          | 142.30          |
 
 ********* Main results *********
 
