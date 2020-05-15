@@ -2,11 +2,11 @@
 
 - [Demand management of hybrid heating](#demand-management-of-hybrid-heating)
   - [Model](#model)
-  - [Household assumption:](#household-assumption)
+  - [Household assumption](#household-assumption)
   - [Techs](#techs)
   - [Weather data](#weather-data)
   - [Fuel cost](#fuel-cost)
-  - [Carbon intensity:](#carbon-intensity)
+  - [Carbon intensity](#carbon-intensity)
     - [Carbon intensity by fuel and geration techs:](#carbon-intensity-by-fuel-and-geration-techs)
     - [National grid average carbon intensity:](#national-grid-average-carbon-intensity)
     - [National grid Marginal carbon intensity:](#national-grid-marginal-carbon-intensity)
@@ -29,7 +29,7 @@ This work present the demand management study of hybrid heating system at a sing
 
 A (simple) LP optimisation model at this stage.
 
-## Household assumption:
+## Household assumption
 
 Location: Edinburgh city
 
@@ -68,7 +68,7 @@ Electricity price = 0.135  # £/kwh
 based on historical price of UK wholesale market (see Figure.1 )
 
 
-## Carbon intensity:
+## Carbon intensity
 ### Carbon intensity by fuel and geration techs:
 
 | Fuel/techs| g/kWh| 
